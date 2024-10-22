@@ -1,17 +1,20 @@
-# minimal-reproduction-template
+# 32098
 
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+Reproduction for Renovate issue [REPLACE_ME]().
 
 ## Current behavior
 
-Explain the current behavior here.
+Updates to the `packageManager` digest fails on projects with private dependencies.
+
+We can see that renovate will run `corepack use pnpm@9.12.2` to update the pnpm digest. The command fails because it is executed before the `.npmrc` file is generated.
+
+This is not an issue with the `.npmrc` file as updates to private dependencies are working as expected (see [Update dependency @private/dependency to v1.0.1](https://github.com/wtrep/corepack-private-repo-npmrc-reproduction/pull/2)).
 
 ## Expected behavior
 
-Explain the expected behavior here.
+1. `corepack use pnpm@9.12.2` should be executed after the `.npmrc` file is configured/generated.
+1. The pnpm version/digest should be updated successfully.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/32098
