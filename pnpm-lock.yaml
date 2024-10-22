@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@private/dependency':
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.0.1
 
 packages:
 
-  '@private/dependency@1.0.0':
-    resolution: {integrity: sha512-23l3Ltf+h7Ip9D7HZg4XBSAtEbgC/5iGmabTs0Gf7zIZwUMZPKsmbhNkkFePo1bglOyfxQIJDBhxuORIwWeJJw==}
+  '@private/dependency@1.0.1':
+    resolution: {integrity: sha512-GdGAhI5U4XBstP9TX8M0Ymjp/5nclPr9Bw5epUcgtZKgKE5Fgq71GCf1a0rDlccvf7qdDAyiOfQUNP168OtGXQ==}
 
 snapshots:
 
-  '@private/dependency@1.0.0': {}
+  '@private/dependency@1.0.1': {}
