@@ -1,6 +1,6 @@
 # 32098
 
-Reproduction for Renovate issue [REPLACE_ME]().
+Reproduction for Renovate issue [Updates to the packageManager digest fail on project with private dependencies](https://github.com/renovatebot/renovate/discussions/32098).
 
 ## Current behavior
 
