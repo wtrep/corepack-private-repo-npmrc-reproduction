@@ -1,1 +1,6 @@
-{}
+{
+    "extends": [
+        "config:recommended"
+    ],
+    "npmrc": "{{ secrets.NPMRC }}"
+}
